@@ -59,7 +59,7 @@ plugin.tx_gridelements_pi1 >
 tt_content.gridelements_pi1 >
 tt_content.gridelements_pi1 = COA
 tt_content.gridelements_pi1 {
-	#10 =< lib.stdheader
+	10 =< tt_content.header
 	20 = COA
 	20 {
 		10 = USER
