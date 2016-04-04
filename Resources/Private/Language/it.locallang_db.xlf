@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2015-09-21T18:41:55Z" product-name="gridelements">
+		<header>
+			<type>database</type>
+			<description>Language labels for database tables/fields belonging to extension 'gridelements'</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="allowedElementTypes">
+			<source>Allowed CE</source>
+			<target>Elementi permessi</target>
+		</trans-unit>
+		<trans-unit id="allowedElementTypesHelp">
+			<source>Select the content element types that may be created or moved here.</source>
+			<target>Selezione il tipo di elemento che può essere creato o spostato qui.</target>
+		</trans-unit>
+		<trans-unit id="allowedGridElementTypes">
+			<source>Allowed Grids</source>
+			<target>Griglie permesse</target>
+		</trans-unit>
+		<trans-unit id="allowedGridElementTypesHelp">
+			<source>Fill in the Gridelements types that may be created or moved here.</source>
+			<target>Imposta i tipi di elementi griglia che possono essere creati o spostati qui.</target>
+		</trans-unit>
+		<trans-unit id="dragAndDropHideNewElementWizardInfoOverlay">
+			<source>Hide info overlays for the new content element drag in wizard.</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="gridElements">
+			<source>Grid Elements</source>
+			<target>Elementi griglie</target>
+		</trans-unit>
+		<trans-unit id="hideColumnHeaders">
+			<source>Hide column headers.</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="hideContentPreview">
+			<source>Hide content element preview.</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="list.collapseElement">
+			<source>Collapse list of child elements</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="list.expandElement">
+			<source>Expand list of child elements</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="list.collapseAllElements">
+			<source>Collapse all grid containers</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="list.expandAllElements">
+			<source>Expand all grid containers</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="list.columnName">
+			<source>Column:</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="showGridInformation">
+			<source>Show grid layout information.</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.CType_pi1">
+			<source>Grid Element</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout">
+			<source>Grid Layout</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.horizontal">
+			<source>Dynamic Columns (horizontal)</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.none">
+			<source>None</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_backend_layout.I.vertical">
+			<source>Dynamic Rows (vertical)</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_children">
+			<source>Content elements</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_columns">
+			<source>Grid Container Columns</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_gridelements_container">
+			<source>Grid Container</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout">
+			<source>CE Backend Layout</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.alias">
+			<source>Alias</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.ce_configuration">
+			<source>Content Element Configuration</source>
+			<target>Configurazione elemento</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.config">
+			<source>Grid Configuration</source>
+			<target>Configurazione griglia</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.description">
+			<source>Description</source>
+			<target>Descrizione</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.div.configuration">
+			<source>Configuration</source>
+			<target>Configurazione</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame">
+			<source>Frame</source>
+			<target>Cornice</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.-1">
+			<source>Neutral</source>
+			<target>Neutrale</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.0">
+			<source>-</source>
+			<target>-</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.1">
+			<source>Red</source>
+			<target>Rosso</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.2">
+			<source>Green</source>
+			<target>Verde</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.frame.I.3">
+			<source>Blue</source>
+			<target>Blu</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.horizontal">
+			<source>Group children</source>
+			<target>Gruppo figlio</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.horizontal.I.0">
+			<source>Side by side</source>
+			<target>Fianco a fianco</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.icon">
+			<source>Icon</source>
+			<target>Icona</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.palette.appearance">
+			<source>Appearance</source>
+			<target>Aspetto</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.pi_flexform_ds">
+			<source>Flexform Configuration</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.pi_flexform_ds_file">
+			<source>Flexform Configuration File (overrides direct input)</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.title">
+			<source>Title</source>
+			<target>Titolo</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout.top_level_layout">
+			<source>Top Level Layout</source>
+			<target></target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_backend_layout_wizard_label">
+			<source>Grid Elements</source>
+			<target>Elementi griglia</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_clickmenu_pastereference">
+			<source>Paste reference after</source>
+			<target>Incolla referenza dopo</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.allowedElementTypes">
+			<source>Allowed CE</source>
+			<target>Elementi ammessi</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.allowedGridElementTypes">
+			<source>Allowed Grids</source>
+			<target>Griglie ammesse</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.copyfrompage">
+			<source>Copy content from another page to this place</source>
+			<target>Copia il contenuto da un'altra pagina in questo punto</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.drophere">
+			<source>Drop Here</source>
+			<target>Rilascia qui</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.missingcontenttemplate">
+			<source>Missing Content Template</source>
+			<target>Template contenuto mancante</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.newcontentelementheader">
+			<source>New</source>
+			<target>Nuovo</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.pasteinto">
+			<source>Paste into this column</source>
+            <target>Incolla in questa colonna</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.pasteafter">
+			<source>Paste after this record</source>
+            <target>Incolla in questa colonna</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.pastecopy">
+			<source>Paste copy into this column</source>
+			<target>Incolla una copia in questa colonna</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.pasteref">
+			<source>Paste reference into this column</source>
+			<target>Incolla una referenza in questa colonna</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.pastecopy">
+			<source>How do you want to paste that clipboard content here?</source>
+			<target>Come vuoi incollare il contenuto degli appunti?</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.cancel">
+			<source>Cancel</source>
+			<target>Annulla</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.pastecopy">
+			<source>Paste copy</source>
+			<target>Incolla una copia</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.pastereference">
+			<source>Paste reference into this column</source>
+            <target>Incolla una referenza in questa colonna</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.pastereference">
+			<source>Paste reference</source>
+			<target>Incolla una referenza</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.paste">
+			<source>Do you want to paste that clipboard content here?</source>
+			<target>Vuoi incollare qui il contenuto degli appunti?</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.title.paste">
+			<source>Paste record</source>
+			<target>Incolla elemento</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_js.modal.button.paste">
+			<source>Paste</source>
+			<target>Incolla</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_collapsecontent">
+			<source>Collapse content in column</source>
+			<target>Comprimi il contenuto delle colonne</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_expandcontent">
+			<source>Expand content in column</source>
+			<target>Espandi il contenuto delle colonne</target>
+		</trans-unit>
+		<trans-unit id="tx_gridelements_contentcollapsed">
+			<source>This column is collapsed!</source>
+			<target>Questa colonna è compressa!</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>
