@@ -3,10 +3,10 @@ lib.gridelements.defaultGridSetup { // stdWrap functions being applied to each e
 		default {
 			renderObj = COA
 			renderObj {
-			    # You can use registers to i.e. provide different image settings for each column
+				# You can use registers to i.e. provide different image settings for each column
 				# 10 = LOAD_REGISTER
 				20 =< tt_content
-			    # And you can reset the register later on
+				# And you can reset the register later on
 				# 30 = RESTORE_REGISTER
 			}
 		}
@@ -29,7 +29,7 @@ lib.tt_content.shortcut.pages {
 	10 = USER
 	10 {
 		userFunc = GridElementsTeam\Gridelements\Plugin\Gridelements->user_getTreeList
-    }
+	}
 	20 = CONTENT
 	20 {
 		table = tt_content
@@ -59,7 +59,34 @@ plugin.tx_gridelements_pi1 >
 tt_content.gridelements_pi1 >
 tt_content.gridelements_pi1 = COA
 tt_content.gridelements_pi1 {
-	10 =< tt_content.header
+	10 = CASE
+	10 {
+		key.field = section_frame
+		default = TEXT
+		default.value = <div id="c{field:uid}" class="frame default">
+		default.insertData = 1
+		1 =< tt_content.gridelements_pi1.10.default
+		1.value = <div id="c{field:uid}" class="frame invisible">
+		5 =< tt_content.gridelements_pi1.10.default
+		5.value = <div id="c{field:uid}" class="frame rulerbefore">
+		6 =< tt_content.gridelements_pi1.10.default
+		6.value = <div id="c{field:uid}" class="frame rulerafter">
+		10 =< tt_content.gridelements_pi1.10.default
+		10.value = <div id="c{field:uid}" class="frame col-xs-10 col-xs-push-1">
+		11 =< tt_content.gridelements_pi1.10.default
+		11.value = <div id="c{field:uid}" class="frame col-xs-9 col-xs-push-3">
+		12 =< tt_content.gridelements_pi1.10.default
+		12.value = <div id="c{field:uid}" class="frame col-xs-9">
+		29 =< tt_content.gridelements_pi1.10.default
+		29.value = <div id="c{field:uid}" class="frame well">
+		21 =< tt_content.gridelements_pi1.10.default
+		21.value = <div id="c{field:uid}" class="frame jumbotron">
+		22 =< tt_content.gridelements_pi1.10.default
+		22.value = <div id="c{field:uid}" class="frame no-vertical-margin">
+		23 =< tt_content.gridelements_pi1.10.default
+		23.value = <div id="c{field:uid}" class="frame full-width">
+	}
+
 	20 = COA
 	20 {
 		10 = USER
@@ -70,6 +97,9 @@ tt_content.gridelements_pi1 {
 			}
 		}
 	}
+
+	30 = TEXT
+	30.value = </div>
 }
 
 tt_content.gridelements_view < tt_content.gridelements_pi1
