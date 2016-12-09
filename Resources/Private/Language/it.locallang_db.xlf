@@ -29,7 +29,7 @@
 		</trans-unit>
 		<trans-unit id="gridElements">
 			<source>Grid Elements</source>
-			<target>Elementi griglie</target>
+			<target>Griglia</target>
 		</trans-unit>
 		<trans-unit id="hideColumnHeaders">
 			<source>Hide column headers.</source>
@@ -89,11 +89,11 @@
 		</trans-unit>
 		<trans-unit id="tt_content.tx_gridelements_columns">
 			<source>Grid Container Columns</source>
-			<target></target>
+			<target>Colonna del contenitore della griglia</target>
 		</trans-unit>
 		<trans-unit id="tt_content.tx_gridelements_container">
 			<source>Grid Container</source>
-			<target></target>
+			<target>Contenitore della griglia</target>
 		</trans-unit>
 		<trans-unit id="tx_gridelements_backend_layout">
 			<source>CE Backend Layout</source>
