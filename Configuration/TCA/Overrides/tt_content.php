@@ -12,7 +12,7 @@ $tempColumns = array(
             'size' => 1,
             'selicon_cols' => 9,
             'maxitems' => 1,
-            'default' => '',
+            'default' => 0,
             'showIconTable' => true
         )
     ),
@@ -66,6 +66,7 @@ $tempColumns = array(
                     0
                 ),
             ),
+            'default' => 0,
             'foreign_table' => 'tt_content',
             'foreign_table_where' => 'AND (tt_content.sys_language_uid = ###REC_FIELD_sys_language_uid### OR tt_content.sys_language_uid = -1) AND tt_content.pid=###CURRENT_PID### AND tt_content.CType=\'gridelements_pi1\' AND (tt_content.uid != ###THIS_UID###) AND (tt_content.tx_gridelements_container != ###THIS_UID### OR tt_content.tx_gridelements_container=0) ORDER BY tt_content.header, tt_content.uid',
             'dontRemapTablesOnCopy' => 'tt_content',
@@ -84,6 +85,7 @@ $tempColumns = array(
             'itemsProcFunc' => 'GridElementsTeam\Gridelements\Backend\TtContent->columnsItemsProcFunc',
             'size' => 1,
             'maxitems' => 1,
+            'default' => 0,
         )
     ),
 );
@@ -103,17 +105,17 @@ $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds']['*,gride
 $GLOBALS['TCA']['tt_content']['columns']['records']['config']['allowed'] .= ',pages';
 
 $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1']['showitem'] = '
-	--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.general;general,
-	--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.header;header,
+	--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+	--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,
 	tx_gridelements_backend_layout,
 	pi_flexform,
 	tx_gridelements_children,
-	--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.appearance,
+	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 	--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.frames;frames,
 	media,
-	--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
-	--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
-	--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
+	--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+	--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+	--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
 	--div--;LLL:EXT:lang/locallang_tca.xlf:sys_category.tabs.category,
 	categories
 	';

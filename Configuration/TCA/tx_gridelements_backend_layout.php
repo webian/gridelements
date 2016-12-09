@@ -42,7 +42,7 @@ return array(
                 'type' => 'check',
                 'items' => array(
                     '1' => array(
-                        '0' => 'LLL:EXT:cms/locallang_ttc.xml:hidden.I.0',
+                        '0' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0',
                     ),
                 ),
             ),
@@ -93,7 +93,7 @@ return array(
             'config' => array(
                 'type' => 'group',
                 'internal_type' => 'file',
-                'allowed' => 'jpg,gif,png',
+                'allowed' => 'jpg,gif,png,svg',
                 'uploadfolder' => 'uploads/tx_gridelements',
                 'show_thumbs' => 1,
                 'size' => 5,
@@ -212,7 +212,7 @@ return array(
 					--palette--;' . $l10n . ':tx_gridelements_backend_layout.palette.appearance;appearance,
 					--div--;' . $l10n . ':tx_gridelements_backend_layout.div.configuration, top_level_layout, alias, config,
 					--palette--;' . $l10n . ':tx_gridelements_backend_layout.ce_configuration;flexform,
-					--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility'
+					--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility'
         ),
     ),
 

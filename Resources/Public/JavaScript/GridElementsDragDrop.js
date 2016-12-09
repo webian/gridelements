@@ -88,14 +88,14 @@ define(['jquery', 'jquery-ui/sortable', 'jquery-ui/droppable'], function ($) {
 
 		// make the drop zones visible (all except the previous one in the current list)
 		var $previousDropZone = $element.prev().children(DragDrop.dropZoneIdentifier);
-		var allowedElementMimeType = $element.find('.t3-ctype-identifier').data('ctype');
-		var allowedGridType = $element.find('.t3-ctype-identifier').data('gridtype');
+		var currentMimeType = $element.find('.t3-ctype-identifier').data('ctype');
+		var currentGridType = $element.find('.t3-ctype-identifier').data('gridtype');
 		$(DragDrop.dropZoneIdentifier).not($previousDropZone).each(function () {
 			var $closestColumn = $(this).closest(DragDrop.columnIdentifier);
-			if (($closestColumn.hasClass('t3-allow-all') ||
-				!allowedGridType && $closestColumn.hasClass('t3-allow-' + allowedElementMimeType) ||
-				$closestColumn.hasClass('t3-allow-gridelements_pi1') && $closestColumn.hasClass('t3-allow-gridtype-' + allowedGridType) ||
-				allowedElementMimeType === 'gridelements_pi1' && $closestColumn.hasClass('t3-allow-gridelements_pi1') && !$closestColumn.hasClass('t3-allow-gridtype')) &&
+			if (($closestColumn.hasClass('t3-allow-all') && (!currentGridType || !$closestColumn.hasClass('t3-allow-gridtype')) ||
+				!currentGridType && $closestColumn.hasClass('t3-allow-' + currentMimeType) ||
+				$closestColumn.hasClass('t3-allow-gridelements_pi1') && $closestColumn.hasClass('t3-allow-gridtype-' + currentGridType) ||
+				currentMimeType === 'gridelements_pi1' && $closestColumn.hasClass('t3-allow-gridtype') && $closestColumn.hasClass('t3-allow-gridtype-' + currentGridType)) &&
 				$(this).parent().find('.icon-actions-document-new').length
 			) {
 				$(this).addClass(DragDrop.validDropZoneClass);
@@ -261,6 +261,9 @@ define(['jquery', 'jquery-ui/sortable', 'jquery-ui/droppable'], function ($) {
 				if (language > -1) {
 					parameters['cmd']['tt_content'][contentElementUid]['copy']['update']['sys_language_uid'] = language;
 				}
+				if (evt === 'copyFromAnotherPage') {
+					parameters['CB'] = {setCopyMode: 1};
+				}
 				// fire the request, and show a message if it has failed
 				require(['TYPO3/CMS/Backend/AjaxDataHandler'], function (DataHandler) {
 					DataHandler.process(parameters).done(function (result) {
@@ -302,12 +305,8 @@ define(['jquery', 'jquery-ui/sortable', 'jquery-ui/droppable'], function ($) {
 									$draggableElement.detach().css({top: 0, left: 0})
 										.insertAfter($droppableElement.closest(DragDrop.contentIdentifier));
 								}
-								if ($('.t3js-page-lang-column').length) {
-									self.location.reload(true);
-								}
-							} else {
-								self.location.reload(true);
 							}
+							self.location.reload(true);
 						}
 					});
 				});
