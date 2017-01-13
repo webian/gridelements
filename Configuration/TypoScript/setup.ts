@@ -64,7 +64,7 @@ tt_content.gridelements_pi1 {
 	10 {
 		key.field = section_frame
 		default = TEXT
-		default.value = <div id="c{field:uid}" class="frame default">
+		default.value = <div id="c{field:uid}" class="frame frame-type-grid">
 		default.insertData = 1
 		1 =< tt_content.gridelements_pi1.10.default
 		1.value = <div id="c{field:uid}" class="frame invisible">
